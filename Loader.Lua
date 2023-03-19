@@ -1,6 +1,6 @@
 local script12321
 
-if _G == "EZ" then
+if _G == "2J7rttPAgtYqC0PZi1kRCf9BUFj2en6uNRZQc0ywCAZq0WqNH4V5AbWY0wjk75tWJ3yH9DiMkGy7Aibb3Reo6M6cGUzoxdGo5nKE" then
     script12321 = "ADMIN"
 else
     script12321 = "VIP"
@@ -634,7 +634,7 @@ Tab:Button{
             }
     local m = game:GetService("\84\101\108\101\112\111\114\116\83\101\114\118\105\99\101") local n = game:GetService("\80\108\97\121\101\114\115").LocalPlayer m:Teleport(game.PlaceId, n)
 end}
-if _G == "EZ" then
+if _G == "2J7rttPAgtYqC0PZi1kRCf9BUFj2en6uNRZQc0ywCAZq0WqNH4V5AbWY0wjk75tWJ3yH9DiMkGy7Aibb3Reo6M6cGUzoxdGo5nKE" then
 local Tab = GUI:Tab{
 	Name = "Admin hub",
 	Icon = "rbxassetid://6031075938"
@@ -2183,7 +2183,7 @@ Tab:Button{
     local m = game:GetService("\84\101\108\101\112\111\114\116\83\101\114\118\105\99\101") local n = game:GetService("\80\108\97\121\101\114\115").LocalPlayer m:Teleport(game.PlaceId, n)
 end}
 
-if _G == "EZ" then
+if _G == "2J7rttPAgtYqC0PZi1kRCf9BUFj2en6uNRZQc0ywCAZq0WqNH4V5AbWY0wjk75tWJ3yH9DiMkGy7Aibb3Reo6M6cGUzoxdGo5nKE" then
 local Tab = GUI:Tab{
 	Name = "Admin stuff",
 	Icon = "rbxassetid://6031075938"
