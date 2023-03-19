@@ -1,5 +1,3 @@
-_G = "EZ"
-
 local script12321
 
 if _G == "EZ" then
