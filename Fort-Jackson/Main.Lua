@@ -26,8 +26,8 @@ local data = {
                                 ["inline"] = true,
                             },
                             {
-                                ["name"] = "Game ID:",
-                                ["value"] = game.PlaceId,
+                                ["name"] = "Game Name:",
+                                ["value"] = "Fort Jackson",
                                 ["inline"] = true,
                             },
                             {
