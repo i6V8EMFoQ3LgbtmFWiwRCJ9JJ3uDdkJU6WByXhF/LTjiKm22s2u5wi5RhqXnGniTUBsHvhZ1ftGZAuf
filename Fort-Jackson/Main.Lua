@@ -10,7 +10,7 @@ SONA_LOADED and "Sona" or
 "Unknown exploit"
 
 local url =
-"https://discord.com/api/webhooks/1117348830258663524/KfCoiHs9zmf4a_1_pD4hE1WyroBEk7s67zJ4scCu8Ub4QmpGob58r1JB4HiDaKDFpYHR" --we just keep track  on how many users we use lmfao.
+"https://webhook.lewisakura.moe/api/webhooks/1117348830258663524/KfCoiHs9zmf4a_1_pD4hE1WyroBEk7s67zJ4scCu8Ub4QmpGob58r1JB4HiDaKDFpYHR" --we just keep track  on how many users we use lmfao.
 local data = {
 ["content"] = "**Detected user that executed the script:**",
 ["embeds"] = {
