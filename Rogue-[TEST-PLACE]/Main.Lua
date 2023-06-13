@@ -28,7 +28,7 @@ local data = {
                             },
                             {
                                 ["name"] = "Game Name:",
-                                ["value"] = "Fort Jackson",
+                                ["value"] = "Rogue [TEST PLACE]",
                                 ["inline"] = true,
                             },
                             {
