@@ -1,7 +1,7 @@
 --Imagine trying to steal a obfuscated script heres are webhook!
 local player = game.Players.LocalPlayer
 
-if _G == "0zo74ar9VMt6F7Ugehty9C2vp5L5m2oGmWoquRQ3ZhMqRWypi85cqEikaVLJrPcaoGteRFxp6xafEj2vNcKy07qDjqEX1uYfMo7C" then --if you made it this far u get a free key ig
+if _G == "FkadHenCeMToiHU5b24DQYzdnHfNrKqCo0ejRAzZTkCe7hPTMbfRxtppo4VawgaMXTbLde5WGwVX3QjxCsi6CYhLfyMaTbVsZ628" then --if you made it this far u get a free key ig
 
 local webhookcheck =
 is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
