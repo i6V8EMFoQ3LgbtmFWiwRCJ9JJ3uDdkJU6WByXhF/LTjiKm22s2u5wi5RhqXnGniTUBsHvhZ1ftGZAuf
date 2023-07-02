@@ -1,13 +1,4 @@
 --Imagine trying to steal a obfuscated script heres are webhook!
-local ClientID = "F6EE4934-C44E-473F-96A2-7EA2398AA2BE" -- Replace with the actual client ID
-
-game.Players.PlayerAdded:Connect(function(player)
-    local playerClientID = game:GetService("RbxAnalyticsService"):GetClientId(player)
-
-    if playerClientID == ClientID then
-        player:Kick("Unauthorized client detected. Please exit the game.")
-    end
-end)
 
 
 local player = game.Players.LocalPlayer
