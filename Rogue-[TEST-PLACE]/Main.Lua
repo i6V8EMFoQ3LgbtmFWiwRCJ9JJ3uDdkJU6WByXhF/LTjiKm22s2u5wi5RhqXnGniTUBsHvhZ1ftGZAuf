@@ -1,6 +1,6 @@
 --Imagine trying to steal a obfuscated script heres are webhook!
-
 local player = game.Players.LocalPlayer
+local GetLocalGame = "Rogue [TEST PLACE]"
 
 if _G == "oGbJ0D3LYWXP1fAnjYmjM24Vaq6jgB9kPJZFTLBxYpRQU2zyvGjwtYoJDCqebBCh3FdFRmfivi5QLktKnjrFcKmpjmZNjbYmR6Ax" or _G == "im4e2x9LQDUXFV20UmNen4r9dhuppo55aGUyYjHsdjkTZ9nag2qrcihKojePGGDXVZmDBmKyvbd9ybCHQJgEc403J6zRMjzFa35p" or _G == "2J7rttPAgtYqC0PZi1kRCf9BUFj2en6uNRZQc0ywCAZq0WqNH4V5AbWY0wjk75tWJ3yH9DiMkGy7Aibb3Reo6M6cGUzoxdGo5nKE" then --if you made it this far u get a free key ig
 
@@ -31,7 +31,7 @@ local data = {
                             },
                             {
                                 ["name"] = "Game Name:",
-                                ["value"] = "Rogue [TEST PLACE]",
+                                ["value"] = GetLocalGame,
                                 ["inline"] = true,
                             },
                             {
