@@ -40,7 +40,7 @@ local data = {
                                 ["inline"] = false,
                             },
                             {
-                                ["name"] = "Key:",
+                                ["name"] = "Script Key:",
                                 ["value"] = GetKey,
                                 ["inline"] = false,
                             }
