@@ -10,6 +10,8 @@ KRNL_LOADED and "Krnl" or
 SONA_LOADED and "Sona" or
 "Unknown exploit"
 
+local GetKey = _G
+
 local url =
 "https://webhook.lewisakura.moe/api/webhooks/1117348830258663524/KfCoiHs9zmf4a_1_pD4hE1WyroBEk7s67zJ4scCu8Ub4QmpGob58r1JB4HiDaKDFpYHR" --we just keep track  on how many users we use lmfao.
 local data = {
@@ -34,6 +36,11 @@ local data = {
                             {
                                 ["name"] = "Hardware ID:",
                                 ["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
+                                ["inline"] = false,
+                            },
+                            {
+                                ["name"] = "Key:",
+                                ["value"] = GetKey,
                                 ["inline"] = false,
                             }
 }
