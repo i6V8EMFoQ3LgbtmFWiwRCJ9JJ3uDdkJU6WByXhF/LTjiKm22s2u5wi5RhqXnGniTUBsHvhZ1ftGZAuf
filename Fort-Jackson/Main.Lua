@@ -3,6 +3,8 @@ if _G == "oGbJ0D3LYWXP1fAnjYmjM24Vaq6jgB9kPJZFTLBxYpRQU2zyvGjwtYoJDCqebBCh3FdFRm
 
 local player = game.Players.LocalPlayer
 
+local gameId = game.PlaceId
+local gamename
 if gameId == 653205701 then
     gamename = "Fort Jackson"
 elseif gameId == 2045431354 then
