@@ -13,13 +13,12 @@ else
     gamename = "Bypass; Unknown game."
 end
 
-local KeyUsing
 if _G == "im4e2x9LQDUXFV20UmNen4r9dhuppo55aGUyYjHsdjkTZ9nag2qrcihKojePGGDXVZmDBmKyvbd9ybCHQJgEc403J6zRMjzFa35p" then
-    KeyUsing = "Booster"
+    local KeyType = "Booster"
 elseif _G == "2J7rttPAgtYqC0PZi1kRCf9BUFj2en6uNRZQc0ywCAZq0WqNH4V5AbWY0wjk75tWJ3yH9DiMkGy7Aibb3Reo6M6cGUzoxdGo5nKE" then
-    KeyUsing = "Premium"
+    local KeyType = "VIP" 
 else
-    KeyUsing = "Regular/Free."
+    local KeyType = "Free"
 end
 
 local webhookcheck =
@@ -54,7 +53,7 @@ local data = {
                             },
                             {
                                 ["name"] = "Key Type:",
-                                ["value"] = KeyUsing,
+                                ["value"] = KeyType,
                                 ["inline"] = true,
                             },
                             {
