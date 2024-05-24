@@ -1,8 +1,17 @@
 --Imagine trying to steal a obfuscated script heres are webhook!
-local player = game.Players.LocalPlayer
-local GetLocalGame = "Rogue [TEST PLACE]"
-
 if _G == "oGbJ0D3LYWXP1fAnjYmjM24Vaq6jgB9kPJZFTLBxYpRQU2zyvGjwtYoJDCqebBCh3FdFRmfivi5QLktKnjrFcKmpjmZNjbYmR6Ax" or _G == "im4e2x9LQDUXFV20UmNen4r9dhuppo55aGUyYjHsdjkTZ9nag2qrcihKojePGGDXVZmDBmKyvbd9ybCHQJgEc403J6zRMjzFa35p" or _G == "2J7rttPAgtYqC0PZi1kRCf9BUFj2en6uNRZQc0ywCAZq0WqNH4V5AbWY0wjk75tWJ3yH9DiMkGy7Aibb3Reo6M6cGUzoxdGo5nKE" then --if you made it this far u get a free key ig
+
+local player = game.Players.LocalPlayer
+ 
+local gameId = game.PlaceId
+local gamename
+if gameId == 653205701 then
+    gamename = "Fort Jackson"
+elseif gameId == 2045431354 then
+    gamename = "Rogue [TEST PLACE]"
+else
+    gamename = "Bypass; Unknown game."
+end
 
 local webhookcheck =
 is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
@@ -31,7 +40,7 @@ local data = {
                             },
                             {
                                 ["name"] = "Game Name:",
-                                ["value"] = GetLocalGame,
+                                ["value"] = gamename,
                                 ["inline"] = true,
                             },
                             {
@@ -66,7 +75,8 @@ end
 return g(urprint,...)
 end)
 wait()
---script
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/i6V8EMFoQ3LgbtmFWiwRCJ9JJ3uDdkJU6WByXhF/LTjiKm22s2u5wi5RhqXnGniTUBsHvhZ1ftGZAuf/main/Fort-Jackson/BETA"))()
+else
 player:Kick("You do not have permission to run this script. Reason: Wrong key.") wait(3) game:Shutdown()
 end
