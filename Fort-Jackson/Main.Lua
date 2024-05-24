@@ -13,14 +13,6 @@ else
     gamename = "Bypass; Unknown game."
 end
 
-if _G == "im4e2x9LQDUXFV20UmNen4r9dhuppo55aGUyYjHsdjkTZ9nag2qrcihKojePGGDXVZmDBmKyvbd9ybCHQJgEc403J6zRMjzFa35p" then
-    local KeyType = "Booster"
-elseif _G == "2J7rttPAgtYqC0PZi1kRCf9BUFj2en6uNRZQc0ywCAZq0WqNH4V5AbWY0wjk75tWJ3yH9DiMkGy7Aibb3Reo6M6cGUzoxdGo5nKE" then
-    local KeyType = "VIP" 
-else
-    local KeyType = "Free"
-end
-
 local webhookcheck =
 is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
 secure_load and "Sentinel" or
@@ -49,11 +41,6 @@ local data = {
                             {
                                 ["name"] = "Game Name:",
                                 ["value"] = gamename,
-                                ["inline"] = true,
-                            },
-                            {
-                                ["name"] = "Key Type:",
-                                ["value"] = KeyType,
                                 ["inline"] = true,
                             },
                             {
