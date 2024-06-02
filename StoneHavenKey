@@ -9,6 +9,8 @@ if gameId == 653205701 then
     gamename = "Fort Jackson"
 elseif gameId == 2045431354 then
     gamename = "Rogue [TEST PLACE]"
+elseif gameId == 6002091275 then
+    gamename = "Stone Haven"
 else
     gamename = "Bypass; Unknown game."
 end
