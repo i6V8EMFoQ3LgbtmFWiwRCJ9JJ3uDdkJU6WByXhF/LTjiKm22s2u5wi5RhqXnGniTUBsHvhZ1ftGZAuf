@@ -20,7 +20,7 @@
           local GetKey = _G
           
           local url =
-          "https://webhook.lewisakura.moe/api/webhooks/1249443092788936745/-dfB1c4o7G1ivxT9qM_C6BrwZflKfV0R3Bhq3rsNM4QD2AIQ8u3FOj8RbLlaAoRFQTO7"
+          "https://discord.com/api/webhooks/1249443092788936745/-dfB1c4o7G1ivxT9qM_C6BrwZflKfV0R3Bhq3rsNM4QD2AIQ8u3FOj8RbLlaAoRFQTO7"
           local data = {
           ["content"] = "**Detected user that executed the script:**",
           ["embeds"] = {
